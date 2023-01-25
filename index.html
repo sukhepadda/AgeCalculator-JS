@@ -19,10 +19,11 @@
       <div class="layer">
         <h3 class="heading">Age Calculator</h3>
         <p class="warning">*pls enter correct data</p>
-          <form action="" id="formElement">
+          <form id="formElement" >
               <div>
               <label for="dateOfBirth">Date of Birth: </label>
             <input
+            id="bd"
               type="text"
               placeholder="date"
               size="2"
@@ -30,23 +31,26 @@
               required
             />
             <input
+            id="bm"
               type="text"
-              placeholder="date"
+              placeholder="mon"
               size="2"
               maxlength="2"
               required
             />
             <input
+            id="by"
               type="text"
-              placeholder="date"
-              size="2"
-              maxlength="2"
+              placeholder="year"
+              size="4"
+              maxlength="4"
               required
             />
           </div>
           <div>
             <label for="todaysDate">Today's Date: </label>
             <input
+            id="td"
               type="text"
               placeholder="date"
               size="2"
@@ -54,25 +58,27 @@
               required
             />
             <input
+            id="tm"
               type="text"
-              placeholder="date"
+              placeholder="mon"
               size="2"
               maxlength="2"
               required
             />
             <input
+            id="ty"
               type="text"
-              placeholder="date"
-              size="2"
-              maxlength="2"
+              placeholder="year"
+              size="4"
+              maxlength="4"
               required
             />
           </div>
           <button type="submit" id="calcBtn">Calculate</button>
         </form>
-        <span id="age">age 22</span><br />
-        <span id="months">month 12</span><br />
-        <span id="days">days 234</span>
+        <span id="age"></span>
+        <span id="months"></span>
+        <span id="days"></span>
       </div>
     </div>
 
